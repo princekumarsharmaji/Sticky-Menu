@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sticky Menu</title>
+    <style>
+        body{
+            margin: 0px;
+
+        }
+        #menu{
+            text-align: center;
+            background-color: orange;
+        }
+        #menu li{
+            display: inline-block;
+            padding: 15px 10px;
+            color: snow;
+            font-size: 18px;
+            font-weight: bold;
+            
+        }
+        #container{
+            text-align: center;
+            padding: 50px, 100px;
+        }
+        .sticky{
+            position: fixed;
+            top: 0%;
+            width: 100%;
+        }
+        p{
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <img src = "prince.png" width= "30%" height=" 50%"></br>
+
+    <nav id ="menu">
+        <li>Home</li>
+        <li>About Us</li>
+        <li>Our Team</li>
+        <li>Career</li>
+        <li>Service</li>
+    </nav>
+    <div id = "container">
+    <img src ="hotel.jpg" width = 50% height="30%">
+    <p>Broadly speaking, a hotel is a managed building or establishment, which provides guests with a place to stay overnight  on a short-term basis  in exchange for money. The precise features and services provided to guests can vary quite drastically from one hotel to another, and hotel owners generally aim to attract a particular type of customer through their pricing model and marketing strategy, or via the range of services they offer.
+        Next, it is important to answer the question: what is the hotel industry? Put simply, the hotel industry is the section of the service industry that deals with guest accommodation or lodgings. By most definitions, the hotel industry refers not only to hotels, but also to many other forms of overnight accommodation, including hostels, motels, inns and guest houses. However, it does not usually include long-term or permanent forms of accommodation.
+
+Due to the nature of hotel services, it is closely associated with the travel and tourism industry.
+    </p>
+    <h2>Services</h2>
+    <p>The primary purpose of hotels is to provide travelers with shelter, food, refreshment, and similar services and goods, offering on a commercial basis things that are customarily furnished within households but unavailable to people on a journey away from home. Historically hotels have also taken on many other functions, serving as business exchanges, centers of sociability, places of public assembly and deliberation, decorative showcases, political headquarters, vacation spots, and permanent residences. The hotel as an institution, and hotels as an industry, transformed travel in America, hastened the settlement of the continent, and extended the influence of urban culture.The first American hotels were built in the cities of the Atlantic coast in the 1790s, when elite urban merchants began to replace taverns with capacious and elegant establishments of their own creation. They hoped thereby to improve key elements of the national transportation infrastructure and increase the value of surrounding real estate, while at the same time erecting imposing public monuments that valorized their economic pursuits and promoted a commercial future for the still agrarian republic. Unlike earlier public accommodations, hotels were impressive structures, readily distinguishable as major public institutions due to their tremendous size, elaborate ornamentation, and sophisticated academic styles. They were often designed by important architects like James Hoban, Charles Bulfinch, and Benjamin Latrobe. Hotels also had a distinctiveinternal arrangement incorporating grand halls for the use of the public and featuring dozens of bedchambers, which for the first time offered private space to all guests. Building on such a massive scale was tremendously expensive, and hotels cost from eight to thirty times as much as had been spent on even the finest taverns. Early hotels quickly became important centers of politics, business, and sociability. The City Hotel in New York, for example, became the center of the Gotham elite's business pursuits and elegant society balls, and Washington's Union Public Hotel housed the U.S. Congress in 1814–1815 after the British army destroyed part of the Capitol. The first generation of hotel building continued into the first decade of the nineteenth century before being brought to a close by the financial failure of many of the first projects and the economic disruptions surrounding the War of 1812.</p>
+    </div>
+
+    <script>
+        window.addEventListener("scroll", function(){
+            let navbar = document.getElementById("menu");
+        if(window.pageYOffset >= 266){
+            navbar.classList.add("sticky")
+        }else{
+
+              navbar.classList.remove("sticky")
+
+
+
+        }
+        });
+    </script>
+    
+</body>
+</html>
